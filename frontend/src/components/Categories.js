@@ -22,7 +22,7 @@ const Categories = () => {
   };
 
   return (
-    <div>
+    <div className='items'>
         {categories.map((category) => (
             <a href="#shop" key={category.name} onClick={() => handleCategoryClick(category)}>
             {category.name}

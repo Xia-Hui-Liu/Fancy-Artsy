@@ -1,6 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { About, Home, Login, Search, Cart } from './pages';
+import Home from './pages/Home';
+import About from './pages/About';
+import Login from './pages/Login';
+import Search from './pages/Search';
+import Cart from './pages/Cart';
+
 import NavBar from './components/NavBar';
 
 

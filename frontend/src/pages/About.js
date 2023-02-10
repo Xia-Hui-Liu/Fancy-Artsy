@@ -1,10 +1,23 @@
-const AboutUs = () => (
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const AboutUs = () => {
+  return (
     <div>
-      <h2>About Us</h2>
-      <p>
-        Our company was founded in 2020 with the mission of providing high-quality products at affordable prices. Our team is comprised of experienced professionals who are dedicated to delivering the best customer experience.
-      </p>
-      <footer>
+      <div className="about">
+        <h2>About Us</h2>
+        <h5>A Trusted Partner in Chemical Adhesives</h5>
+        <p>
+          Founded in 1998, FANCY ARTSY is a leading chemical adhesive company with a focus on quality and innovation. With an annual production capacity of over 30,000 tons and a commitment to growth, we have the resources to meet the demands of our customers. Our products undergo rigorous testing and are certified by ISO9001: 2000 quality management system and SGS, RoHS environmental reports.
+
+          At ZDSResin, we understand the importance of customization and are dedicated to providing tailored solutions to meet the specific needs of our customers. Whether it's through our OEM/ODM services or by developing custom products, we are here to help.
+
+          Our corporate vision is to make professional-grade products accessible to everyone, while our business philosophy is centered around delivering superior quality and innovative solutions.
+
+          Join us in our mission to provide the best in chemical adhesives. Contact us today to learn more.
+        </p>
+      </div>
+      <footer className="footer">
         <h3>Follow Us</h3>
         <div className="social-media">
           <a href="https://www.facebook.com/">
@@ -18,12 +31,13 @@ const AboutUs = () => (
           </a>
         </div>
         <div className="footer-links">
-          <a href="#home">Home</a>
-          <a href="#shop">Shop</a>
-          <a href="#aboutUs">About Us</a>
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/about">About Us</Link>
         </div>
-        <p>© 2020 Fancy Artsy. All rights reserved.</p>
+        <p>© 2023 Fancy Artsy. All rights reserved.</p>
       </footer>
     </div>
   );
+  } 
 export default AboutUs;  

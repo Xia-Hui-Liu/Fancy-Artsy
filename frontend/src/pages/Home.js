@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from '../asset/logo.png';
+import ShopNowButton from '../components/ShopNowButton';
 
 const Home = () => {
+
     return (
         <>
             <div className="main">
@@ -16,7 +18,8 @@ const Home = () => {
                     nunc nisl lacinia nisl, vitae aliquam nunc nisl nec nunc. Nullam auctor, nisl eget ultricies tincidunt,
                     nunc nisl lacinia nisl, vitae aliquam nunc nisl nec nunc. Nullam auctor, nisl eget ultricies tincidunt,
                     </p>
-                    <button className="main-button">Shop Now</button>
+                    {/* <button className="main-button" onClick={handleClick}>Shop Now</button> */}
+                    <ShopNowButton />
                 </div>
             </div>
         </>

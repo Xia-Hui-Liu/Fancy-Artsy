@@ -1,14 +1,16 @@
 const express = require('express');
-const app = express();
 const cors = require('cors');
+const app = express();
 
 app.use(cors());
-app.use(express.static(__dirname + '/build'));
+app.use(express.static('build'));
 
-app.get('/home', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');
 });
 
-app.listen(4000, () => {
-  console.log('React app listening on port 4000!');
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
